@@ -1,5 +1,9 @@
-import reactImg from "../src/assets/react-core-concepts.png"; 
-import componenstImg from "./assets/components.png";                                                           
+import reactImg from "../src/assets/react-core-concepts.png"; /*Tells React where to look for
+                                                                 the header Image (The atom). */
+import componenstImg from "./assets/components.png";   /*Tells React where to look for
+                                                         Component Image. */
+import { CORE_CONCEPTS } from "./data";    /*Tells React where to look for
+                                             CORE_CONPCEPT (array of data). */                                                    
 
 const reactDescriptions = ['Fundamental', 'Crucial', 'Core']; 
 
@@ -42,13 +46,25 @@ function App() {
         <h2>Core Concepts</h2>
         <ul>
           <CoreConcept //Here you define the Props you wanna use, within the call to your component CoreConcepts */
-              title = "Components" 
-              description = "The Core IU Building Block"
-              image = {componenstImg} //Here you use {} syntax to insert images as a Prop.
+              title = {CORE_CONCEPTS[0].title}
+              description = {CORE_CONCEPTS[0].description}
+              image = {CORE_CONCEPTS[0].image} //Here you use {} syntax to insert images as a Prop.
           />
-          <CoreConcept title = "Props"/>
-          <CoreConcept />
-          <CoreConcept />
+          <CoreConcept 
+             title = {CORE_CONCEPTS[1].title}
+             description = {CORE_CONCEPTS[1].description}
+             image = {CORE_CONCEPTS[1].image}
+             />
+          <CoreConcept 
+          title = {CORE_CONCEPTS[2].title}
+          description = {CORE_CONCEPTS[2].description}
+          image = {CORE_CONCEPTS[2].image}
+          
+          />
+          <CoreConcept 
+          title = {CORE_CONCEPTS[3].title}
+          description = {CORE_CONCEPTS[3].description}
+          image = {CORE_CONCEPTS[3].image}/>
 
 
         </ul>
