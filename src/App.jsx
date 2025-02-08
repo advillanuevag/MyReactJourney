@@ -51,21 +51,17 @@ function App() {
               image = {CORE_CONCEPTS[0].image} //Here you use {} syntax to insert images as a Prop.
           />
           <CoreConcept 
-             title = {CORE_CONCEPTS[1].title}
-             description = {CORE_CONCEPTS[1].description}
-             image = {CORE_CONCEPTS[1].image}
-             />
+             {...CORE_CONCEPTS[1]} /*Use JS Spread Operator ... to access 
+                                     the values contained in CORE_CONCEPTS array
+                                     index 1. */                                   
+          />
           <CoreConcept 
-          title = {CORE_CONCEPTS[2].title}
-          description = {CORE_CONCEPTS[2].description}
-          image = {CORE_CONCEPTS[2].image}
+            {...CORE_CONCEPTS[2]}
           
           />
           <CoreConcept 
-          title = {CORE_CONCEPTS[3].title}
-          description = {CORE_CONCEPTS[3].description}
-          image = {CORE_CONCEPTS[3].image}/>
-
+            {...CORE_CONCEPTS[1]}
+          />
 
         </ul>
 
