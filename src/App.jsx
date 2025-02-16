@@ -1,41 +1,13 @@
-import reactImg from "../src/assets/react-core-concepts.png"; /*Tells React where to look for
-                                                                 the header Image (The atom). */
+
 import componenstImg from "./assets/components.png";   /*Tells React where to look for
                                                          Component Image. */
 import { CORE_CONCEPTS } from "./data";    /*Tells React where to look for
-                                             CORE_CONPCEPT (array of data). */                                                    
+                                             CORE_CONPCEPT (array of data). */  
+import Header from "./components/Header"; /*Tells React where to look for
+                                            Header component code. */
 
-const reactDescriptions = ['Fundamental', 'Crucial', 'Core']; 
-
-function genRandomInt(max) {
-  return Math.floor(Math.random() * (max + 1)); 
-}
-
-function Header() {
-  const description = reactDescriptions[genRandomInt(2)] 
-  return (
-    <header>
-      <img src={reactImg} alt="Stylized atom" />
-      <h1>React Essentials</h1>
-      <p>
-        {description} React concepts you will need for almost any app you are going to build!
-      </p>
-    </header>
-  );
-}
-
-function CoreConcept({ image, title, description }){ /*Here we use Destructuring JS feature
-  to set the CORE_CONCEPTS values as Props for the CoreConcept Component. */
-  return(
-    <li>
-      <img src={image} alt={title}/> 
-      <h3>{title}</h3>
-      <p>{description}</p>
-
-
-    </li>
-  )
-}
+import CoreConcept from "./components/CoreConcept";/*Tells React where to look for
+                                                     CoreConcept component code. */
 
 
 function App() {
