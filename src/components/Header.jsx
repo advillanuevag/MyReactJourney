@@ -1,5 +1,6 @@
 import reactImg from "../assets/react-core-concepts.png"; /*Tells React where to look for
                                                                  the header Image (The atom). */
+import "./Header.css";
 
 const reactDescriptions = ['Fundamental', 'Crucial', 'Core']; /* We cut and pasted this
                                                                  sentence for reactDescriptions
