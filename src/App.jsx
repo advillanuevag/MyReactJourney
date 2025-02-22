@@ -8,6 +8,7 @@ import Header from "./components/Header"; /*Tells React where to look for
 
 import CoreConcept from "./components/CoreConcept";/*Tells React where to look for
                                                      CoreConcept component code. */
+import TabButton from "./components/TabButton";
 
 
 function App() {
@@ -37,6 +38,20 @@ function App() {
           />
 
         </ul>
+
+
+        </section>
+
+        <section id="examples"> /* We added a new Section here to create
+                                   the next part of our app which will
+                                   contain four tab buttons */
+          <h2>Examples</h2>
+          <menu>
+            <TabButton>Components</TabButton>
+            <TabButton>JSX</TabButton>
+            <TabButton>Props</TabButton>
+            <TabButton>State</TabButton>
+          </menu>
 
 
         </section>
